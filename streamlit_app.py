@@ -45,7 +45,7 @@ if uploaded_file is not None:
     img_array = img_array / 255.0
     img_array = np.expand_dims(img_array, axis=0)
 
-    Make predictions
+    # Make predictions
     predictions = model.predict(img_array)
     predicted_class = np.argmax(predictions, axis=1)[0]
     confidence = np.max(predictions) * 100
