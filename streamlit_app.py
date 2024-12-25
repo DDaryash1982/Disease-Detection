@@ -1,9 +1,24 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+import gdown
 
-# Load the pre-trained model
-model = tf.keras.models.load_model('VGG16_model.h5')
+# Function to download the model from Google Drive
+def download_model_from_drive(drive_url, output_path):
+    # gdown.download will download the model and save it to the specified path
+    gdown.download(drive_url, output_path, quiet=False)
+
+# URL of the model on Google Drive (file ID extracted from your link)
+drive_url = 'https://drive.google.com/uc?export=download&id=1LRrKxPTODIox9GNa9qcEeLaUnXvS1-2k'
+model_path = 'VGG16_model.h5'
+
+# Download the model if it is not already present
+try:
+    model = tf.keras.models.load_model(model_path)
+except:
+    st.write("Model not found locally. Downloading from Google Drive...")
+    download_model_from_drive(drive_url, model_path)
+    model = tf.keras.models.load_model(model_path)
 IMG_SIZE = (224, 224)
 
 # Title of the application
