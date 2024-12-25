@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 
 # Load the pre-trained model
-model = tf.keras.models.load_model('VGG16_model.h5')
+model = tf.keras.models.load_model('/workspaces/Disease-Detection/VGG16_model.h5')
 IMG_SIZE = (224, 224)
 
 # Title of the application
