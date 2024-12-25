@@ -17,3 +17,10 @@ A simple Streamlit app template for you to modify!
    ```
    $ streamlit run streamlit_app.py
    ```
+
+
+3.  Use the WebApp
+
+   ```
+   https://diseasedetectionddaryash1982.streamlit.app/ 
+   ```
