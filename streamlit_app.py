@@ -1,10 +1,9 @@
 import streamlit as st
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 import numpy as np
 
 # Load the pre-trained model
-model = load_model('/workspaces/Disease-Detection/VGG16_model.h5')
+model = tf.keras.models.load_model('/workspaces/Disease-Detection/VGG16_model.h5')
 IMG_SIZE = (224, 224)
 
 # Title of the application
@@ -39,10 +38,10 @@ uploaded_file = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png
 
 if uploaded_file is not None:
     # Process the uploaded image
-    img = image.load_img(uploaded_file, target_size=IMG_SIZE)
+    img = tf.keras.preprocessing.image.load_img(uploaded_file, target_size=IMG_SIZE)
     st.image(img, caption='Uploaded Image', width=300)
 
-    img_array = image.img_to_array(img)
+    img_array = tf.keras.preprocessing.image.img_to_array(img)
     img_array = img_array / 255.0
     img_array = np.expand_dims(img_array, axis=0)
 
