@@ -20,18 +20,18 @@ with st.expander("Help Section", expanded=False):
         col1, col2, col3 = st.columns(3)
         Width=150
         with col1:
-            st.image("/workspaces/Disease-Detection/S1.jpg", caption="Blood Cancer", width=Width)
+            st.image("S1.jpg", caption="Blood Cancer", width=Width)
         with col2:
-            st.image("/workspaces/Disease-Detection/S2.jpg", caption="Skin Cancer", width=Width)
+            st.image("S2.jpg", caption="Skin Cancer", width=Width)
         with col3:
-            st.image("/workspaces/Disease-Detection/S3.jpg", caption="Kidney Stone", width=Width)
+            st.image("S3.jpg", caption="Kidney Stone", width=Width)
         col4, col5, col6 = st.columns(3)
         with col4:
-            st.image("/workspaces/Disease-Detection/S4.jpg", caption="Pneumonia", width=Width)
+            st.image("S4.jpg", caption="Pneumonia", width=Width)
         with col5:
-            st.image("/workspaces/Disease-Detection/S5.jpg", caption="Brain Tumor", width=Width)
+            st.image("S5.jpg", caption="Brain Tumor", width=Width)
         with col6:
-            st.image("/workspaces/Disease-Detection/S6.jpg", caption="Diabetic Retinopathy", width=Width)
+            st.image("S6.jpg", caption="Diabetic Retinopathy", width=Width)
 
 # File uploader
 uploaded_file = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
