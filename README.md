@@ -1,6 +1,14 @@
-# 🎈 Blank app template
+# Disease Detection
 
-A simple Streamlit app template for you to modify!
+A simple Streamlit Web App which can predict disease humans are suffering from CT-SCAN, MRI and Xray Images
+
+Currently It works on Six Types of Diseases
+1. Skin Cancer
+2. Blood Cancer
+3. Pneumonia
+4. Diabetic Retinopathy
+5. Brain Tumor
+6. Kidney Stone
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
@@ -19,7 +27,7 @@ A simple Streamlit app template for you to modify!
    ```
 
 
-3.  Use the WebApp
+3. Use the WebApp
 
    ```
    https://diseasedetectionddaryash1982.streamlit.app/ 
