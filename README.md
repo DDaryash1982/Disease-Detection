@@ -10,13 +10,7 @@ Currently It works on Six Types of Diseases
 5. Brain Tumor
 6. Kidney Stone
 
-Use the WebApp
-
-   ```
-   https://diseasedetectionddaryash1982.streamlit.app/ 
-   ```
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Use the Web App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://diseasedetectionddaryash1982.streamlit.app/)
 
 ### How to run it on your own machine
 
